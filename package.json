@@ -1,0 +1,46 @@
+{
+  "name": "lerna-wizard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "lerna-wizard": "./bin/lerna-wizard"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "rimraf dist&&babel -w src -d dist",
+    "preversion": "rimraf dist&&babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.2",
+    "babel-preset-latest": "^6.6.0",
+    "jest": "^17.0.3",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "cross-spawn-promise": "^0.9.0",
+    "inquirer": "^1.2.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/dist/"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}", "!src/example/**", "!src/index.js"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 88.37,
+        "functions": 85.71,
+        "lines": 91.94,
+        "statements": 91.94
+      }
+    }
+  }
+}

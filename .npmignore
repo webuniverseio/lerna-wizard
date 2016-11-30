@@ -1,0 +1,7 @@
+/node_modules
+/src
+/npm-debug.log
+/dist/*.test.js
+/coverage
+/__mocks__
+/.babelrc

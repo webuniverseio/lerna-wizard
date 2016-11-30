@@ -1,0 +1,5 @@
+/node_modules
+/.idea
+/npm-debug.log
+/dist/*.test.js
+/coverage
