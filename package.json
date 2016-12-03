@@ -1,6 +1,6 @@
 {
   "name": "lerna-wizard",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -33,7 +33,11 @@
       "<rootDir>/dist/"
     ],
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/**/*.{js,jsx}", "!src/example/**", "!src/index.js"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/example/**",
+      "!src/index.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 88.37,
