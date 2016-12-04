@@ -25,9 +25,9 @@ If you would like filter out some of the commands that lerna wizard is showing (
 Wizard needs [lerna](https://github.com/lerna/lerna) to be available in the command line when lerna-wizard spawns commands.
 
 ```
-npm i lerna -g
+npm i lerna@prerelease -g
 or
-npm i lerna -S (and expose lerna to command line somehow)
+npm i lerna@prerelease -S (and expose lerna to command line somehow)
 ```
 
 ### Installing
