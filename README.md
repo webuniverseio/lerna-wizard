@@ -75,3 +75,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * Hat tip to anyone who's code was used
 * Lerna authors and contributors
 * [Kent C. Dodds](https://kentcdodds.com/) for his public activity, which inspired me to make this project
+
+[![Analytics](https://ga-beacon.appspot.com/UA-61501696-1/szarouski/lerna-wizard/README)](https://github.com/igrigorik/ga-beacon)
