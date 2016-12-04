@@ -4,7 +4,7 @@
 # Lerna Wizard
 
 Command line wizard for [lerna](https://github.com/lerna/lerna).  
-![demo.gif](https://github.com/szarouski/lerna-wizard/blob/master/demo.gif)
+![demo.gif](https://raw.githubusercontent.com/szarouski/lerna-wizard/master/demo.gif)
 
 ## Getting Started
 
