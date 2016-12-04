@@ -4,7 +4,7 @@
 # Lerna Wizard
 
 Command line wizard for [lerna](https://github.com/lerna/lerna).  
-![demo.gif](demo.gif)
+![demo.gif](https://github.com/szarouski/lerna-wizard/blob/master/demo.gif)
 
 ## Getting Started
 
@@ -68,7 +68,7 @@ See also the list of [contributors](https://github.com/szarouski/lerna-wizard/co
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/szarouski/lerna-wizard/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
