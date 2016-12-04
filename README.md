@@ -3,7 +3,8 @@
 
 # Lerna Wizard
 
-Command line wizard for [lerna](https://github.com/lerna/lerna).
+Command line wizard for [lerna](https://github.com/lerna/lerna).  
+![demo.gif](demo.gif)
 
 ## Getting Started
 
