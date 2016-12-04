@@ -5,3 +5,5 @@
 /coverage
 /__mocks__
 /.babelrc
+/.travis.yml
+/appveyor.yml
