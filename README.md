@@ -1,3 +1,6 @@
+![Travis CI](https://travis-ci.org/szarouski/lerna-wizard.svg?branch=master)
+![Build status](https://ci.appveyor.com/api/projects/status/9w1fl2s3vu6x06nn/branch/master?svg=true)
+
 # Lerna Wizard
 
 Command line wizard for [lerna](https://github.com/lerna/lerna).
