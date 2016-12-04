@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "dev": "rimraf dist&&babel -w src -d dist",
-    "preversion": "rimraf dist&&babel src -d dist"
+    "preversion": "rimraf dist&&jest&&babel src -d dist"
   },
   "keywords": [],
   "author": "",
