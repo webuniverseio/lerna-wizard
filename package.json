@@ -26,7 +26,7 @@
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "cross-spawn-promise": "^0.9.0",
-    "inquirer": "^1.2.3"
+    "inquirer": "^2.0.0"
   },
   "jest": {
     "testEnvironment": "node",
