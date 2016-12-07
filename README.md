@@ -1,5 +1,6 @@
 ![Travis CI](https://travis-ci.org/szarouski/lerna-wizard.svg?branch=master)
 ![Build status](https://ci.appveyor.com/api/projects/status/9w1fl2s3vu6x06nn/branch/master?svg=true)
+[![Coverage Status](https://coveralls.io/repos/github/szarouski/lerna-wizard/badge.svg?branch=master)](https://coveralls.io/github/szarouski/lerna-wizard?branch=master)
 
 # Lerna Wizard
 
