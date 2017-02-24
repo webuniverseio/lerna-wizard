@@ -1,43 +1,45 @@
-exports[`test bootstrap 1`] = `"lerna bootstrap"`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test bootstrap but ignore some packages 1`] = `"lerna bootstrap --ignore component-*"`;
+exports[`bootstrap 1`] = `"lerna bootstrap"`;
 
-exports[`test clean 1`] = `"lerna clean"`;
+exports[`bootstrap but ignore some packages 1`] = `"lerna bootstrap --ignore component-*"`;
 
-exports[`test custom log level 1`] = `"lerna --loglevel silly ls"`;
+exports[`clean 1`] = `"lerna clean"`;
 
-exports[`test diff all 1`] = `"lerna diff"`;
+exports[`custom log level 1`] = `"lerna --loglevel silly ls"`;
 
-exports[`test diff package 1`] = `"lerna diff pkg1"`;
+exports[`diff all 1`] = `"lerna diff"`;
 
-exports[`test exec 1`] = `"lerna exec --concurrency 4 -- npm version"`;
+exports[`diff package 1`] = `"lerna diff pkg1"`;
 
-exports[`test exec, custom inputs 1`] = `"lerna exec --concurrency 1 --scope component-* -- npm version"`;
+exports[`exec 1`] = `"lerna exec --concurrency 4 -- npm version"`;
 
-exports[`test exec, empty inputs 1`] = `"lerna exec -- npm version"`;
+exports[`exec, custom inputs 1`] = `"lerna exec --concurrency 1 --scope component-* -- npm version"`;
 
-exports[`test import 1`] = `"lerna import path/to/package"`;
+exports[`exec, empty inputs 1`] = `"lerna exec -- npm version"`;
 
-exports[`test init 1`] = `"lerna init"`;
+exports[`import 1`] = `"lerna import path/to/package"`;
 
-exports[`test init 2`] = `"lerna init --independent"`;
+exports[`init 1`] = `"lerna init"`;
 
-exports[`test lerna ls 1`] = `"lerna ls"`;
+exports[`init 2`] = `"lerna init --independent"`;
 
-exports[`test publish 1`] = `"lerna publish"`;
+exports[`lerna ls 1`] = `"lerna ls"`;
 
-exports[`test publish custom: confirm all, no inputs 1`] = `"lerna publish --canary --skip-git --skip-npm --yes --only-explicit-updates"`;
+exports[`publish 1`] = `"lerna publish"`;
 
-exports[`test publish custom: no inputs, no confirms 1`] = `"lerna publish"`;
+exports[`publish custom: confirm all, no inputs 1`] = `"lerna publish --canary --skip-git --skip-npm --yes --only-explicit-updates"`;
 
-exports[`test publish custom: only inputs 1`] = `"lerna publish --npm-tag custom --force-publish pkg1,pkg2 --repo-version 1.0.0"`;
+exports[`publish custom: no inputs, no confirms 1`] = `"lerna publish"`;
 
-exports[`test run 1`] = `"lerna run --concurrency 4 test"`;
+exports[`publish custom: only inputs 1`] = `"lerna publish --npm-tag custom --force-publish pkg1,pkg2 --repo-version 1.0.0"`;
 
-exports[`test run, custom inputs 1`] = `"lerna run --concurrency 1 --scope component-* test"`;
+exports[`run 1`] = `"lerna run --concurrency 4 test"`;
 
-exports[`test run, empty inputs 1`] = `"lerna run test"`;
+exports[`run, custom inputs 1`] = `"lerna run --concurrency 1 --scope component-* test"`;
 
-exports[`test updated 1`] = `"lerna updated"`;
+exports[`run, empty inputs 1`] = `"lerna run test"`;
 
-exports[`test updated only explicit 1`] = `"lerna updated --only-explicit-updates"`;
+exports[`updated 1`] = `"lerna updated"`;
+
+exports[`updated only explicit 1`] = `"lerna updated --only-explicit-updates"`;
