@@ -9,7 +9,7 @@ Command line wizard for [lerna](https://github.com/lerna/lerna).
 
 ## Getting Started
 
-Open terminal and run `lerna-wizard` if installed globally. If installed locally, you can add `"lerna-wizard": "lerna-wizard"` to you package.json `scripts` section and run `npm run lerna-wizard` in terminal.
+Open terminal and run `lerna-wizard` if installed globally. If installed locally, you can run `npx lerna-wizard` in terminal.
 
 If you would like filter out some of the commands that lerna wizard is showing (for example most likely you'll not need `lerna init` after first install), you can do so via `require('lerna-wizard')(options)`, check `bin/lerna-wizard` for more details. Options example:
 ```  
