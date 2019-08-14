@@ -33,7 +33,7 @@
     "babel-preset-latest": "^6.6.0",
     "coveralls": "^2.11.15",
     "jest": "^19.0.2",
-    "rimraf": "^2.5.4"
+    "rimraf": "^3.0.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
