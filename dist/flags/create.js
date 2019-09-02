@@ -12,7 +12,7 @@ function () {
   var _ref = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee(command) {
-    var _ref2, externalRepoPath;
+    var _ref2, packageName;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -21,8 +21,8 @@ function () {
             _context.next = 2;
             return inquirer.prompt([{
               type: 'input',
-              name: 'externalRepoPath',
-              message: 'Specify a path for package to be imported into packages/directory-name',
+              name: 'packageName',
+              message: 'Specify a name for a new package',
               validate: function validate(val) {
                 return !!val;
               }
@@ -30,8 +30,8 @@ function () {
 
           case 2:
             _ref2 = _context.sent;
-            externalRepoPath = _ref2.externalRepoPath;
-            return _context.abrupt("return", "".concat(command, " ").concat(externalRepoPath));
+            packageName = _ref2.packageName;
+            return _context.abrupt("return", "".concat(command, " ").concat(packageName));
 
           case 5:
           case "end":

@@ -1,141 +1,110 @@
-'use strict';
+"use strict";
 
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 var _require = require('inquirer'),
     prompt = _require.prompt;
 
 var omitProperty = require('../helpers/omitProperty');
 
-module.exports = function () {
-    var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(command) {
-        var _ref2, commandName, customFlags, inputPrompts, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, promptOptions, createFlag, options, _ref3, result;
+module.exports =
+/*#__PURE__*/
+function () {
+  var _ref = _asyncToGenerator(
+  /*#__PURE__*/
+  regeneratorRuntime.mark(function _callee(command) {
+    var _ref2, commandName, customFlags, inputPrompts, _i, _inputPrompts, promptOptions, createFlag, options, _ref3, result;
 
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-            while (1) {
-                switch (_context.prev = _context.next) {
-                    case 0:
-                        _context.next = 2;
-                        return prompt([{
-                            type: 'input',
-                            name: 'commandName',
-                            message: 'Enter command that you want to execute',
-                            validate: function validate(value) {
-                                return !!value;
-                            }
-                        }]);
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return prompt([{
+              type: 'input',
+              name: 'commandName',
+              message: 'Enter command that you want to execute',
+              validate: function validate(value) {
+                return !!value;
+              }
+            }]);
 
-                    case 2:
-                        _ref2 = _context.sent;
-                        commandName = _ref2.commandName;
-                        customFlags = [];
-                        inputPrompts = [{
-                            type: 'input',
-                            name: 'concurrency',
-                            message: 'How many threads to use when Lerna parallelizes the tasks (defaults to 4)',
-                            default: '4',
-                            filter: function filter(val) {
-                                if (['0', '4'].includes(val)) {
-                                    return 0;
-                                }
-                                return Number(val);
-                            },
-                            createFlag: function createFlag(input) {
-                                return '--concurrency ' + input;
-                            }
-                        }, {
-                            type: 'input',
-                            name: 'scope',
-                            message: '\n        Scope a command to a subset of packages?\n        Specify glob, for example: toolbar-*.\n        Leave blank to skip this step.'.trim().replace(/\s+/g, ' '),
-                            createFlag: function createFlag(input) {
-                                return '--scope ' + input;
-                            }
-                        }];
-                        _iteratorNormalCompletion = true;
-                        _didIteratorError = false;
-                        _iteratorError = undefined;
-                        _context.prev = 9;
-                        _iterator = inputPrompts[Symbol.iterator]();
-
-                    case 11:
-                        if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                            _context.next = 23;
-                            break;
-                        }
-
-                        promptOptions = _step.value;
-                        createFlag = promptOptions.createFlag;
-                        options = omitProperty('createFlag', promptOptions);
-                        _context.next = 17;
-                        return prompt([options]);
-
-                    case 17:
-                        _ref3 = _context.sent;
-                        result = _ref3[promptOptions.name];
-
-                        if (result) {
-                            customFlags.push(createFlag(result));
-                        }
-
-                    case 20:
-                        _iteratorNormalCompletion = true;
-                        _context.next = 11;
-                        break;
-
-                    case 23:
-                        _context.next = 29;
-                        break;
-
-                    case 25:
-                        _context.prev = 25;
-                        _context.t0 = _context['catch'](9);
-                        _didIteratorError = true;
-                        _iteratorError = _context.t0;
-
-                    case 29:
-                        _context.prev = 29;
-                        _context.prev = 30;
-
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-
-                    case 32:
-                        _context.prev = 32;
-
-                        if (!_didIteratorError) {
-                            _context.next = 35;
-                            break;
-                        }
-
-                        throw _iteratorError;
-
-                    case 35:
-                        return _context.finish(32);
-
-                    case 36:
-                        return _context.finish(29);
-
-                    case 37:
-                        if (!customFlags.length) {
-                            _context.next = 39;
-                            break;
-                        }
-
-                        return _context.abrupt('return', command + ' ' + customFlags.join(' ') + ' -- ' + commandName);
-
-                    case 39:
-                        return _context.abrupt('return', command + ' -- ' + commandName);
-
-                    case 40:
-                    case 'end':
-                        return _context.stop();
+          case 2:
+            _ref2 = _context.sent;
+            commandName = _ref2.commandName;
+            customFlags = [];
+            inputPrompts = [{
+              type: 'input',
+              name: 'concurrency',
+              message: 'How many threads to use when Lerna parallelizes the tasks (defaults to 4)',
+              "default": '4',
+              filter: function filter(val) {
+                if (['0', '4'].includes(val)) {
+                  return 0;
                 }
-            }
-        }, _callee, this, [[9, 25, 29, 37], [30,, 32, 36]]);
-    }));
 
-    return function (_x) {
-        return _ref.apply(this, arguments);
-    };
+                return Number(val);
+              },
+              createFlag: function createFlag(input) {
+                return "--concurrency ".concat(input);
+              }
+            }, {
+              type: 'input',
+              name: 'scope',
+              message: "\n        Scope a command to a subset of packages?\n        Specify glob, for example: toolbar-*.\n        Leave blank to skip this step.".trim().replace(/\s+/g, ' '),
+              createFlag: function createFlag(input) {
+                return "--scope ".concat(input);
+              }
+            }];
+            _i = 0, _inputPrompts = inputPrompts;
+
+          case 7:
+            if (!(_i < _inputPrompts.length)) {
+              _context.next = 19;
+              break;
+            }
+
+            promptOptions = _inputPrompts[_i];
+            createFlag = promptOptions.createFlag;
+            options = omitProperty('createFlag', promptOptions);
+            _context.next = 13;
+            return prompt([options]);
+
+          case 13:
+            _ref3 = _context.sent;
+            result = _ref3[promptOptions.name];
+
+            if (result) {
+              customFlags.push(createFlag(result));
+            }
+
+          case 16:
+            _i++;
+            _context.next = 7;
+            break;
+
+          case 19:
+            if (!customFlags.length) {
+              _context.next = 21;
+              break;
+            }
+
+            return _context.abrupt("return", "".concat(command, " ").concat(customFlags.join(' '), " -- ").concat(commandName));
+
+          case 21:
+            return _context.abrupt("return", "".concat(command, " -- ").concat(commandName));
+
+          case 22:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
 }();
