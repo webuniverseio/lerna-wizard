@@ -31,7 +31,6 @@ afterEach(function () {
         {skipGit: true},
         {skipNpm: true},
         {yes: true},
-        {onlyExplicitUpdates: true},
         {npmTag: ''},
         {forcePublishPackages: ''},
         {repoVersion: ''},
@@ -46,7 +45,6 @@ afterEach(function () {
         {skipGit: false},
         {skipNpm: false},
         {yes: false},
-        {onlyExplicitUpdates: false},
         {npmTag: 'custom'},
         {forcePublishPackages: 'pkg1,pkg2'},
         {repoVersion: '1.0.0'},
@@ -61,7 +59,6 @@ afterEach(function () {
         {skipGit: false},
         {skipNpm: false},
         {yes: false},
-        {onlyExplicitUpdates: false},
         {npmTag: ''},
         {forcePublishPackages: ''},
         {repoVersion: ''},
@@ -69,10 +66,7 @@ afterEach(function () {
     ]
 }, {
     testName: 'updated',
-    answers: [{command: 'updated'}, {onlyExplicitUpdates: false}, {logLevel: 'info'}]
-}, {
-    testName: 'updated only explicit',
-    answers: [{command: 'updated'}, {onlyExplicitUpdates: true}, {logLevel: 'info'}]
+    answers: [{command: 'updated'}, {logLevel: 'info'}]
 }, {
     testName: 'import',
     answers: [{command: 'import'}, {externalRepoPath: 'path/to/package'}, {logLevel: 'info'}]

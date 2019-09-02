@@ -28,7 +28,7 @@ exports[`lerna ls 1`] = `"lerna ls"`;
 
 exports[`publish 1`] = `"lerna publish"`;
 
-exports[`publish custom: confirm all, no inputs 1`] = `"lerna publish --canary --skip-git --skip-npm --yes --only-explicit-updates"`;
+exports[`publish custom: confirm all, no inputs 1`] = `"lerna publish --canary --skip-git --skip-npm --yes"`;
 
 exports[`publish custom: no inputs, no confirms 1`] = `"lerna publish"`;
 
@@ -41,5 +41,3 @@ exports[`run, custom inputs 1`] = `"lerna run --concurrency 1 --scope component-
 exports[`run, empty inputs 1`] = `"lerna run test"`;
 
 exports[`updated 1`] = `"lerna updated"`;
-
-exports[`updated only explicit 1`] = `"lerna updated --only-explicit-updates"`;

@@ -43,14 +43,6 @@ module.exports = async function (command) {
             Skip all confirmation prompts?`.trim().replace(/\s+/g, ' '),
             default: false,
             flagToAdd: '--yes'
-        }, {
-            type: 'confirm',
-            name: 'onlyExplicitUpdates',
-            message: `
-            Bump versions only for packages that 
-            have been updated explicitly rather than cross-dependencies?`.trim().replace(/\s+/g, ' '),
-            default: false,
-            flagToAdd: '--only-explicit-updates'
         }];
         const inputPrompts = [{
             type: 'input',
