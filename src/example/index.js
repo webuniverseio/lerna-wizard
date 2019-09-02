@@ -1,4 +1,3 @@
-require('babel-polyfill');
 (async function () {
     try {
         await require('../')({
