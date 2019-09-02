@@ -17,6 +17,7 @@ module.exports = async function (params = {}) {
                 },
                 {value: `publish`, name: `[publish] Publish updated packages to npm`},
                 {value: `updated`, name: `[updated] Check which packages have changed since the last release`},
+                {value: `create`, name: `[create] Create a new lerna-managed package`},
                 {value: `import`, name: `[import] Import a package with git history from an external repository`},
                 {value: `clean`, name: `[clean] Remove the node_modules directory from all packages`},
                 {value: `diff`, name: `[diff] Diff all packages or a single package since the last release`},
