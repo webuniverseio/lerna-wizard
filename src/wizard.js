@@ -1,4 +1,4 @@
-require('babel-polyfill');
+require('@babel/polyfill');
 const {prompt} = require('inquirer');
 module.exports = async function (params = {}) {
     const {

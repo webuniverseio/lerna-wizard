@@ -1,5 +1,7 @@
 language: node_js
 node_js:
-  - "7"
   - "6"
+  - "8"
+  - "10"
+  - "12"
 script: npm run travisTest
