@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "travisTest": "npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "travisTest": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "dev": "rimraf dist&&babel -w src -d dist",
     "preversion": "rimraf dist&&jest&&babel src -d dist"
   },
