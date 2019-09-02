@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "travisTest": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "ciTest": "jest --coverage",
     "dev": "rimraf dist&&babel -w src -d dist",
     "preversion": "rimraf dist&&jest&&babel src -d dist"
   },
@@ -32,7 +32,6 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^19.0.0",
-    "coveralls": "^3.0.6",
     "jest": "^24.9.0",
     "rimraf": "^2.7.1"
   },
