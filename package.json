@@ -50,7 +50,8 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!src/example/**",
-      "!src/index.js"
+      "!src/index.js",
+      "!src/flags/create.js"
     ],
     "coverageThreshold": {
       "global": {
