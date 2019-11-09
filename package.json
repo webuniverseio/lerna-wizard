@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/szarouski/lerna-wizard/"
+    "url": "https://github.com/webuniverseio/lerna-wizard/"
   },
   "keywords": [
     "monorepo",
@@ -24,9 +24,9 @@
   "author": "Sergey Zarouski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/szarouski/lerna-wizard/issues"
+    "url": "https://github.com/webuniverseio/lerna-wizard/issues"
   },
-  "homepage": "https://github.com/szarouski/lerna-wizard/",
+  "homepage": "https://github.com/webuniverseio/lerna-wizard/",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
