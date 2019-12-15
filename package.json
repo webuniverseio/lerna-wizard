@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "cross-spawn-promise": "^0.10.1",
-    "inquirer": "^6.5.2"
+    "inquirer": "^7.0.1"
   },
   "jest": {
     "testEnvironment": "node",
