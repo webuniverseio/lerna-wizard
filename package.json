@@ -33,7 +33,7 @@
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^19.0.0",
     "jest": "^24.9.0",
-    "rimraf": "^2.7.1"
+    "rimraf": "^3.0.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
