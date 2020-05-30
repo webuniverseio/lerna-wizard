@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-env": "^7.10.2",
     "babel-jest": "^19.0.0",
     "jest": "^24.9.0",
     "rimraf": "^2.7.1"
